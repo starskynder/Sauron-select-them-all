@@ -10,12 +10,24 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
   color: #000;
   background-color: #fff;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  transition: all 0.4s ease-out;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  color: #ca0000;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #03698b;
+  text-decoration: underline;
 }
 
 header {
@@ -42,8 +54,12 @@ h2 {
   color: #ca0000;
 }
 
-p {
-  padding: 1em;
+h2 {
+  margin: 0.3em;
+}
+
+.presentation {
+  padding: 0 0.5em;
 }
 
 #middle-earth {
@@ -63,12 +79,14 @@ p {
   display: flex;
   flex-flow: column wrap;
   list-style-type: none;
-  padding: 1em;
+  margin: 0;
+  padding: 0.5em;
 }
 
 .game-description {
   background-color: #03698b;
   color: #fff;
+  padding: 1em;
 }
 
 .solution {
@@ -82,7 +100,6 @@ p {
 
 .game-options {
   padding: 1em;
-  /* box-shadow: 0 0 6px #dfdfdf; */
   border: 2px solid #000;
   border-radius: 10px;
   margin-bottom: 1em;
@@ -98,7 +115,6 @@ p {
   font-family: inherit;
   width: 250px;
   margin: 1em auto;
-
   color: #000;
 }
 
@@ -164,10 +180,30 @@ p {
 .ending {
   background-color: #dfdfdf;
   cursor: initial;
+  color: #929292;
+  border-color: #929292;
 }
 
 .control-buttons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.sauron {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 500px) {
+  .next,
+  .reset {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 70%;
+    margin: auto;
+  }
 }

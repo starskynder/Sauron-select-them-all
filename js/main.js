@@ -137,6 +137,9 @@ function showSolution(e) {
       case 3:
         const sauronWin = document.body;
         sauronWin.classList.add("sauron-win");
+        const image = document.querySelector(".sauron-img");
+        console.log(image);
+        image.setAttribute("src", "images/sauronwhite.png");
     }
     if (index !== 3) {
       nextButton.removeAttribute("disabled");
@@ -166,4 +169,10 @@ function resetGame() {
   index = 0;
   createGame(index);
   document.body.classList.remove("sauron-win");
+  gameOptions.forEach(v => {
+    v.classList.remove("ending");
+  });
+  const image = document.querySelector(".sauron-img");
+  console.log(image);
+  image.setAttribute("src", "images/sauron.png");
 }
