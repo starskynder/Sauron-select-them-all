@@ -58,6 +58,7 @@ h2 {
   margin: 0.3em;
 }
 
+/* ---Game --- */
 .presentation {
   padding: 0 0.5em;
 }
@@ -190,10 +191,7 @@ h2 {
   justify-content: center;
 }
 
-.sauron {
-  background-color: #fff;
-}
-
+/* --- Media Query --- */
 @media screen and (min-width: 500px) {
   .next,
   .reset {
