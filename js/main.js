@@ -120,8 +120,6 @@ function showSolution(e) {
   target.classList.add("option-blue");
 
   if (index === 3 && target.classList.contains("badchoice")) {
-    console.log(index);
-    console.log(target.classList.contains("badchoice"));
     gameOptions.forEach(v => {
       v.removeEventListener("click", showSolution);
       v.classList.add("ending");
@@ -172,7 +170,7 @@ function showSolution(e) {
 //Switch to the next quiz section
 function showQuiz() {
   index += 1;
-  console.log("l'index chiamato è " + index);
+
   gameOptions.forEach(v => {
     v.classList.remove("option-blue");
     v.classList.remove("option-red");
