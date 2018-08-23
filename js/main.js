@@ -55,9 +55,9 @@ const gameDescriptions = {
   gameQuiz3: {
     option: [
       'const frodoBaggins<wbr> = document.getElementsBy<wbr>TagName("i")',
-      'const frodoBaggins <wbr>= document.querySelector<wbr>("baggings");',
-      'const frodoBaggins<wbr> = document.getElementBy<wbr>Id("baggings");',
-      'const frodoBaggings<wbr> = document.querySelector<wbr>All("#baggings");'
+      'const frodoBaggins <wbr>= document.querySelector<wbr>("baggins");',
+      'const frodoBaggins<wbr> = document.getElementBy<wbr>Id("baggins");',
+      'const frodoBaggings<wbr> = document.querySelector<wbr>All("#baggins");'
     ],
     solutions: [
       "(NO! This would select all <i> tag not only the one with the id of baggings, Frodo had launched the ring in the lava, it's too late! Sauron is defeated!)",
